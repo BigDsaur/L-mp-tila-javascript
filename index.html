@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lämpötilanmuunnin</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="converter">
+      <h1>Lämpötilanmuunnin</h1>
+      <input type="number" id="inputTemp" placeholder="laita lämpötila" />
+      <select id="inputUnit">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+      </select>
+      <button onclick="convertTemperature()">muunna</button>
+      <div class="results">
+        <p id="result">Tulos</p>
+      </div>
+      <div class="decimal-buttons">
+        <button onclick="setDecimalPlaces(1)">1 Decimaali</button>
+        <button onclick="setDecimalPlaces(2)">2 Decimaalia</button>
+        <button onclick="setDecimalPlaces(3)">3 Decimaalia</button>
+      </div>
+    </div>
+    <script src="lampo.js"></script>
+  </body>
+</html>
